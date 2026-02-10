@@ -1,0 +1,478 @@
+2025-11-26 16:04:50,615 - __main__ - INFO - ================================================================================
+2025-11-26 16:04:50,615 - __main__ - INFO - LOADING MODEL COMPONENTS
+2025-11-26 16:04:50,615 - __main__ - INFO - ================================================================================
+2025-11-26 16:04:50,616 - __main__ - INFO - Loading phishing_model.pkl...
+2025-11-26 16:04:51,318 - __main__ - INFO - Loading scaler.pkl...
+2025-11-26 16:04:51,320 - __main__ - INFO - Loading model_metadata.json...
+2025-11-26 16:04:51,322 - __main__ - INFO -   Model name: Random Forest (Fixed)
+2025-11-26 16:04:51,322 - __main__ - INFO -   Test recall: 1.0000
+2025-11-26 16:04:51,322 - __main__ - INFO -   Test F1: 1.0000
+2025-11-26 16:04:51,323 - __main__ - INFO - ================================================================================
+2025-11-26 16:04:54,458 - __main__ - INFO - Attempting to load training CSV dataset...
+2025-11-26 16:04:55,317 - __main__ - INFO -   CSV columns: ['FILENAME', 'URL', 'URLLength', 'Domain', 'DomainLength', 'IsDomainIP', 'TLD', 'URLSimilarityIndex', 'CharContinuationRate', 'TLDLegitimateProb']...
+2025-11-26 16:04:55,318 - __main__ - INFO -   Phishing (0): 100945
+2025-11-26 16:04:55,319 - __main__ - INFO -   Legitimate (1): 134850
+2025-11-26 16:04:55,519 - __main__ - INFO -   Selected row index: 79441
+2025-11-26 16:04:55,519 - __main__ - INFO -   URL: http://www.wrapmobility.com
+2025-11-26 16:04:55,519 - __main__ - INFO -   Extracted 46 features from CSV
+2025-11-26 16:04:55,519 - __main__ - INFO -   Actual label in CSV: 0 (Phishing)
+2025-11-26 16:04:58,881 - __main__ - INFO - 
+================================================================================
+2025-11-26 16:04:58,882 - __main__ - INFO - PREDICTION ANALYSIS
+2025-11-26 16:04:58,882 - __main__ - INFO - ================================================================================
+2025-11-26 16:04:58,882 - __main__ - INFO - Timestamp: 2025-11-26 16:04:58
+2025-11-26 16:04:58,882 - __main__ - INFO - URL: http://www.wrapmobility.com
+2025-11-26 16:04:58,882 - __main__ - INFO - ================================================================================
+2025-11-26 16:04:58,882 - __main__ - INFO - FEATURE EXTRACTION
+2025-11-26 16:04:58,882 - __main__ - INFO - ================================================================================
+2025-11-26 16:04:58,882 - __main__ - INFO - URL: http://www.wrapmobility.com
+2025-11-26 16:04:58,883 - __main__ - INFO - Manual features provided: 46
+2025-11-26 16:04:58,883 - __main__ - INFO - Expected feature count: 46
+2025-11-26 16:04:58,883 - __main__ - INFO - Using CSV-provided features directly (40+ features available)
+2025-11-26 16:04:58,884 - __main__ - INFO - Feature extraction complete (CSV mode)
+2025-11-26 16:04:58,884 - __main__ - INFO - Feature vector shape: (1, 46)
+2025-11-26 16:04:58,884 - __main__ - INFO - First 10 features:
+2025-11-26 16:04:58,884 - __main__ - INFO -   DomainLength: 20
+2025-11-26 16:04:58,884 - __main__ - INFO -   IsDomainIP: 0
+2025-11-26 16:04:58,884 - __main__ - INFO -   URLSimilarityIndex: 80.83639706
+2025-11-26 16:04:58,884 - __main__ - INFO -   CharContinuationRate: 1.0
+2025-11-26 16:04:58,885 - __main__ - INFO -   TLDLegitimateProb: 0.5229071
+2025-11-26 16:04:58,885 - __main__ - INFO -   URLCharProb: 0.055688191
+2025-11-26 16:04:58,885 - __main__ - INFO -   TLDLength: 3
+2025-11-26 16:04:58,885 - __main__ - INFO -   NoOfSubDomain: 1
+2025-11-26 16:04:58,885 - __main__ - INFO -   HasObfuscation: 0
+2025-11-26 16:04:58,885 - __main__ - INFO -   NoOfObfuscatedChar: 0
+2025-11-26 16:04:58,885 - __main__ - INFO - ================================================================================
+2025-11-26 16:04:58,885 - __main__ - INFO - 
+Passing features to model...
+2025-11-26 16:04:58,886 - __main__ - INFO - Feature matrix shape: (1, 46)
+2025-11-26 16:04:58,886 - __main__ - INFO - Feature data types: {dtype('int64'): 37, dtype('float64'): 9}
+2025-11-26 16:04:58,886 - __main__ - INFO - Making prediction...
+2025-11-26 16:04:58,922 - __main__ - INFO - Calculating probability scores...
+2025-11-26 16:04:58,956 - __main__ - INFO - 
+================================================================================
+2025-11-26 16:04:58,956 - __main__ - INFO - PREDICTION RESULT SUMMARY
+2025-11-26 16:04:58,956 - __main__ - INFO - ================================================================================
+2025-11-26 16:04:58,958 - __main__ - INFO - Confidence: 100.00%
+2025-11-26 16:04:58,958 - __main__ - INFO - Phishing Risk: 100.00%
+2025-11-26 16:04:58,958 - __main__ - INFO - ================================================================================
+
+2025-11-26 16:05:01,022 - __main__ - INFO -   Selected row index: 61445
+2025-11-26 16:05:01,022 - __main__ - INFO -   URL: https://www.sheridancollege.ca
+2025-11-26 16:05:01,023 - __main__ - INFO -   Extracted 46 features from CSV
+2025-11-26 16:05:01,023 - __main__ - INFO -   Actual label in CSV: 1 (Legitimate)
+2025-11-26 16:05:01,886 - __main__ - INFO - 
+================================================================================
+2025-11-26 16:05:01,886 - __main__ - INFO - PREDICTION ANALYSIS
+2025-11-26 16:05:01,886 - __main__ - INFO - ================================================================================
+2025-11-26 16:05:01,887 - __main__ - INFO - Timestamp: 2025-11-26 16:05:01
+2025-11-26 16:05:01,887 - __main__ - INFO - URL: https://www.sheridancollege.ca
+2025-11-26 16:05:01,887 - __main__ - INFO - ================================================================================
+2025-11-26 16:05:01,887 - __main__ - INFO - FEATURE EXTRACTION
+2025-11-26 16:05:01,887 - __main__ - INFO - ================================================================================
+2025-11-26 16:05:01,887 - __main__ - INFO - URL: https://www.sheridancollege.ca
+2025-11-26 16:05:01,887 - __main__ - INFO - Manual features provided: 46
+2025-11-26 16:05:01,887 - __main__ - INFO - Expected feature count: 46
+2025-11-26 16:05:01,888 - __main__ - INFO - Using CSV-provided features directly (40+ features available)
+2025-11-26 16:05:01,888 - __main__ - INFO - Feature extraction complete (CSV mode)
+2025-11-26 16:05:01,888 - __main__ - INFO - Feature vector shape: (1, 46)
+2025-11-26 16:05:01,889 - __main__ - INFO - First 10 features:
+2025-11-26 16:05:01,889 - __main__ - INFO -   DomainLength: 22
+2025-11-26 16:05:01,889 - __main__ - INFO -   IsDomainIP: 0
+2025-11-26 16:05:01,889 - __main__ - INFO -   URLSimilarityIndex: 100.0
+2025-11-26 16:05:01,889 - __main__ - INFO -   CharContinuationRate: 1.0
+2025-11-26 16:05:01,889 - __main__ - INFO -   TLDLegitimateProb: 0.0101825
+2025-11-26 16:05:01,889 - __main__ - INFO -   URLCharProb: 0.062796011
+2025-11-26 16:05:01,889 - __main__ - INFO -   TLDLength: 2
+2025-11-26 16:05:01,890 - __main__ - INFO -   NoOfSubDomain: 1
+2025-11-26 16:05:01,890 - __main__ - INFO -   HasObfuscation: 0
+2025-11-26 16:05:01,890 - __main__ - INFO -   NoOfObfuscatedChar: 0
+2025-11-26 16:05:01,890 - __main__ - INFO - ================================================================================
+2025-11-26 16:05:01,890 - __main__ - INFO - 
+Passing features to model...
+2025-11-26 16:05:01,890 - __main__ - INFO - Feature matrix shape: (1, 46)
+2025-11-26 16:05:01,891 - __main__ - INFO - Feature data types: {dtype('int64'): 37, dtype('float64'): 9}
+2025-11-26 16:05:01,891 - __main__ - INFO - Making prediction...
+2025-11-26 16:05:01,923 - __main__ - INFO - Calculating probability scores...
+2025-11-26 16:05:01,956 - __main__ - INFO - 
+================================================================================
+2025-11-26 16:05:01,956 - __main__ - INFO - PREDICTION RESULT SUMMARY
+2025-11-26 16:05:01,957 - __main__ - INFO - ================================================================================
+2025-11-26 16:05:01,958 - __main__ - INFO - Confidence: 100.00%
+2025-11-26 16:05:01,958 - __main__ - INFO - Phishing Risk: 0.00%
+2025-11-26 16:05:01,959 - __main__ - INFO - ================================================================================
+
+2025-11-26 16:05:03,717 - __main__ - INFO -   Selected row index: 48104
+2025-11-26 16:05:03,717 - __main__ - INFO -   URL: https://www.bindt.org
+2025-11-26 16:05:03,717 - __main__ - INFO -   Extracted 46 features from CSV
+2025-11-26 16:05:03,717 - __main__ - INFO -   Actual label in CSV: 1 (Legitimate)
+2025-11-26 16:05:04,635 - __main__ - INFO - 
+================================================================================
+2025-11-26 16:05:04,635 - __main__ - INFO - PREDICTION ANALYSIS
+2025-11-26 16:05:04,635 - __main__ - INFO - ================================================================================
+2025-11-26 16:05:04,635 - __main__ - INFO - Timestamp: 2025-11-26 16:05:04
+2025-11-26 16:05:04,635 - __main__ - INFO - URL: https://www.bindt.org
+2025-11-26 16:05:04,635 - __main__ - INFO - ================================================================================
+2025-11-26 16:05:04,635 - __main__ - INFO - FEATURE EXTRACTION
+2025-11-26 16:05:04,636 - __main__ - INFO - ================================================================================
+2025-11-26 16:05:04,636 - __main__ - INFO - URL: https://www.bindt.org
+2025-11-26 16:05:04,636 - __main__ - INFO - Manual features provided: 46
+2025-11-26 16:05:04,636 - __main__ - INFO - Expected feature count: 46
+2025-11-26 16:05:04,636 - __main__ - INFO - Using CSV-provided features directly (40+ features available)
+2025-11-26 16:05:04,637 - __main__ - INFO - Feature extraction complete (CSV mode)
+2025-11-26 16:05:04,637 - __main__ - INFO - Feature vector shape: (1, 46)
+2025-11-26 16:05:04,637 - __main__ - INFO - First 10 features:
+2025-11-26 16:05:04,637 - __main__ - INFO -   DomainLength: 13
+2025-11-26 16:05:04,637 - __main__ - INFO -   IsDomainIP: 0
+2025-11-26 16:05:04,638 - __main__ - INFO -   URLSimilarityIndex: 100.0
+2025-11-26 16:05:04,638 - __main__ - INFO -   CharContinuationRate: 1.0
+2025-11-26 16:05:04,638 - __main__ - INFO -   TLDLegitimateProb: 0.0799628
+2025-11-26 16:05:04,638 - __main__ - INFO -   URLCharProb: 0.05619171
+2025-11-26 16:05:04,638 - __main__ - INFO -   TLDLength: 3
+2025-11-26 16:05:04,638 - __main__ - INFO -   NoOfSubDomain: 1
+2025-11-26 16:05:04,638 - __main__ - INFO -   HasObfuscation: 0
+2025-11-26 16:05:04,639 - __main__ - INFO -   NoOfObfuscatedChar: 0
+2025-11-26 16:05:04,639 - __main__ - INFO - ================================================================================
+2025-11-26 16:05:04,639 - __main__ - INFO - 
+Passing features to model...
+2025-11-26 16:05:04,639 - __main__ - INFO - Feature matrix shape: (1, 46)
+2025-11-26 16:05:04,640 - __main__ - INFO - Feature data types: {dtype('int64'): 37, dtype('float64'): 9}
+2025-11-26 16:05:04,640 - __main__ - INFO - Making prediction...
+2025-11-26 16:05:04,672 - __main__ - INFO - Calculating probability scores...
+2025-11-26 16:05:04,705 - __main__ - INFO - 
+================================================================================
+2025-11-26 16:05:04,706 - __main__ - INFO - PREDICTION RESULT SUMMARY
+2025-11-26 16:05:04,706 - __main__ - INFO - ================================================================================
+2025-11-26 16:05:04,708 - __main__ - INFO - Confidence: 100.00%
+2025-11-26 16:05:04,708 - __main__ - INFO - Phishing Risk: 0.00%
+2025-11-26 16:05:04,708 - __main__ - INFO - ================================================================================
+
+2025-11-26 16:05:07,621 - __main__ - INFO -   Selected row index: 69007
+2025-11-26 16:05:07,621 - __main__ - INFO -   URL: https://connection-orangebank-certicode.derlma.com/5894723/
+2025-11-26 16:05:07,621 - __main__ - INFO -   Extracted 46 features from CSV
+2025-11-26 16:05:07,621 - __main__ - INFO -   Actual label in CSV: 0 (Phishing)
+2025-11-26 16:05:08,417 - __main__ - INFO - 
+================================================================================
+2025-11-26 16:05:08,418 - __main__ - INFO - PREDICTION ANALYSIS
+2025-11-26 16:05:08,418 - __main__ - INFO - ================================================================================
+2025-11-26 16:05:08,418 - __main__ - INFO - Timestamp: 2025-11-26 16:05:08
+2025-11-26 16:05:08,418 - __main__ - INFO - URL: https://connection-orangebank-certicode.derlma.com/5894723/
+2025-11-26 16:05:08,418 - __main__ - INFO - ================================================================================
+2025-11-26 16:05:08,418 - __main__ - INFO - FEATURE EXTRACTION
+2025-11-26 16:05:08,419 - __main__ - INFO - ================================================================================
+2025-11-26 16:05:08,419 - __main__ - INFO - URL: https://connection-orangebank-certicode.derlma.com/5894723/
+2025-11-26 16:05:08,419 - __main__ - INFO - Manual features provided: 46
+2025-11-26 16:05:08,419 - __main__ - INFO - Expected feature count: 46
+2025-11-26 16:05:08,419 - __main__ - INFO - Using CSV-provided features directly (40+ features available)
+2025-11-26 16:05:08,420 - __main__ - INFO - Feature extraction complete (CSV mode)
+2025-11-26 16:05:08,420 - __main__ - INFO - Feature vector shape: (1, 46)
+2025-11-26 16:05:08,420 - __main__ - INFO - First 10 features:
+2025-11-26 16:05:08,420 - __main__ - INFO -   DomainLength: 42
+2025-11-26 16:05:08,420 - __main__ - INFO -   IsDomainIP: 0
+2025-11-26 16:05:08,420 - __main__ - INFO -   URLSimilarityIndex: 38.35294118
+2025-11-26 16:05:08,421 - __main__ - INFO -   CharContinuationRate: 0.289473684
+2025-11-26 16:05:08,421 - __main__ - INFO -   TLDLegitimateProb: 0.5229071
+2025-11-26 16:05:08,421 - __main__ - INFO -   URLCharProb: 0.057332856
+2025-11-26 16:05:08,421 - __main__ - INFO -   TLDLength: 3
+2025-11-26 16:05:08,421 - __main__ - INFO -   NoOfSubDomain: 1
+2025-11-26 16:05:08,421 - __main__ - INFO -   HasObfuscation: 0
+2025-11-26 16:05:08,421 - __main__ - INFO -   NoOfObfuscatedChar: 0
+2025-11-26 16:05:08,422 - __main__ - INFO - ================================================================================
+2025-11-26 16:05:08,422 - __main__ - INFO - 
+Passing features to model...
+2025-11-26 16:05:08,422 - __main__ - INFO - Feature matrix shape: (1, 46)
+2025-11-26 16:05:08,422 - __main__ - INFO - Feature data types: {dtype('int64'): 37, dtype('float64'): 9}
+2025-11-26 16:05:08,423 - __main__ - INFO - Making prediction...
+2025-11-26 16:05:08,456 - __main__ - INFO - Calculating probability scores...
+2025-11-26 16:05:08,490 - __main__ - INFO - 
+================================================================================
+2025-11-26 16:05:08,490 - __main__ - INFO - PREDICTION RESULT SUMMARY
+2025-11-26 16:05:08,490 - __main__ - INFO - ================================================================================
+2025-11-26 16:05:08,492 - __main__ - INFO - Confidence: 100.00%
+2025-11-26 16:05:08,492 - __main__ - INFO - Phishing Risk: 100.00%
+2025-11-26 16:05:08,492 - __main__ - INFO - ================================================================================
+
+2025-11-26 16:05:27,142 - __main__ - INFO -   Selected row index: 56446
+2025-11-26 16:05:27,142 - __main__ - INFO -   URL: https://www.muenzeoesterreich.at
+2025-11-26 16:05:27,142 - __main__ - INFO -   Extracted 46 features from CSV
+2025-11-26 16:05:27,142 - __main__ - INFO -   Actual label in CSV: 1 (Legitimate)
+2025-11-26 16:05:29,973 - __main__ - INFO - 
+================================================================================
+2025-11-26 16:05:29,973 - __main__ - INFO - PREDICTION ANALYSIS
+2025-11-26 16:05:29,973 - __main__ - INFO - ================================================================================
+2025-11-26 16:05:29,974 - __main__ - INFO - Timestamp: 2025-11-26 16:05:29
+2025-11-26 16:05:29,974 - __main__ - INFO - URL: https://www.muenzeoesterreich.at
+2025-11-26 16:05:29,974 - __main__ - INFO - ================================================================================
+2025-11-26 16:05:29,974 - __main__ - INFO - FEATURE EXTRACTION
+2025-11-26 16:05:29,974 - __main__ - INFO - ================================================================================
+2025-11-26 16:05:29,974 - __main__ - INFO - URL: https://www.muenzeoesterreich.at
+2025-11-26 16:05:29,974 - __main__ - INFO - Manual features provided: 46
+2025-11-26 16:05:29,974 - __main__ - INFO - Expected feature count: 46
+2025-11-26 16:05:29,974 - __main__ - INFO - Using CSV-provided features directly (40+ features available)
+2025-11-26 16:05:29,975 - __main__ - INFO - Feature extraction complete (CSV mode)
+2025-11-26 16:05:29,975 - __main__ - INFO - Feature vector shape: (1, 46)
+2025-11-26 16:05:29,976 - __main__ - INFO - First 10 features:
+2025-11-26 16:05:29,976 - __main__ - INFO -   DomainLength: 24
+2025-11-26 16:05:29,976 - __main__ - INFO -   IsDomainIP: 0
+2025-11-26 16:05:29,976 - __main__ - INFO -   URLSimilarityIndex: 100.0
+2025-11-26 16:05:29,976 - __main__ - INFO -   CharContinuationRate: 1.0
+2025-11-26 16:05:29,976 - __main__ - INFO -   TLDLegitimateProb: 0.0038776
+2025-11-26 16:05:29,976 - __main__ - INFO -   URLCharProb: 0.065694704
+2025-11-26 16:05:29,976 - __main__ - INFO -   TLDLength: 2
+2025-11-26 16:05:29,976 - __main__ - INFO -   NoOfSubDomain: 1
+2025-11-26 16:05:29,977 - __main__ - INFO -   HasObfuscation: 0
+2025-11-26 16:05:29,977 - __main__ - INFO -   NoOfObfuscatedChar: 0
+2025-11-26 16:05:29,977 - __main__ - INFO - ================================================================================
+2025-11-26 16:05:29,977 - __main__ - INFO - 
+Passing features to model...
+2025-11-26 16:05:29,977 - __main__ - INFO - Feature matrix shape: (1, 46)
+2025-11-26 16:05:29,978 - __main__ - INFO - Feature data types: {dtype('int64'): 37, dtype('float64'): 9}
+2025-11-26 16:05:29,978 - __main__ - INFO - Making prediction...
+2025-11-26 16:05:30,010 - __main__ - INFO - Calculating probability scores...
+2025-11-26 16:05:30,046 - __main__ - INFO - 
+================================================================================
+2025-11-26 16:05:30,046 - __main__ - INFO - PREDICTION RESULT SUMMARY
+2025-11-26 16:05:30,046 - __main__ - INFO - ================================================================================
+2025-11-26 16:05:30,048 - __main__ - INFO - Confidence: 100.00%
+2025-11-26 16:05:30,048 - __main__ - INFO - Phishing Risk: 0.00%
+2025-11-26 16:05:30,048 - __main__ - INFO - ================================================================================
+
+2025-12-02 20:18:09,511 - __main__ - INFO - ================================================================================
+2025-12-02 20:18:09,512 - __main__ - INFO - LOADING MODEL COMPONENTS
+2025-12-02 20:18:09,512 - __main__ - INFO - ================================================================================
+2025-12-02 20:18:09,512 - __main__ - INFO - Loading phishing_model.pkl...
+2025-12-02 20:18:14,690 - __main__ - INFO - Loading scaler.pkl...
+2025-12-02 20:18:14,699 - __main__ - INFO - Loading model_metadata.json...
+2025-12-02 20:18:14,710 - __main__ - INFO -   Model name: Random Forest (Fixed)
+2025-12-02 20:18:14,710 - __main__ - INFO -   Test recall: 1.0000
+2025-12-02 20:18:14,710 - __main__ - INFO -   Test F1: 1.0000
+2025-12-02 20:18:14,710 - __main__ - INFO - ================================================================================
+2025-12-02 20:32:11,403 - __main__ - INFO - Attempting to load training CSV dataset...
+2025-12-02 20:32:12,458 - __main__ - INFO -   CSV columns: ['FILENAME', 'URL', 'URLLength', 'Domain', 'DomainLength', 'IsDomainIP', 'TLD', 'URLSimilarityIndex', 'CharContinuationRate', 'TLDLegitimateProb']...
+2025-12-02 20:32:12,463 - __main__ - INFO -   Phishing (0): 100945
+2025-12-02 20:32:12,464 - __main__ - INFO -   Legitimate (1): 134850
+2025-12-02 20:32:24,191 - __main__ - INFO - 
+================================================================================
+2025-12-02 20:32:24,191 - __main__ - INFO - PREDICTION ANALYSIS
+2025-12-02 20:32:24,191 - __main__ - INFO - ================================================================================
+2025-12-02 20:32:24,191 - __main__ - INFO - Timestamp: 2025-12-02 20:32:24
+2025-12-02 20:32:24,191 - __main__ - INFO - URL: https://example-random.com
+2025-12-02 20:32:24,191 - __main__ - INFO - ================================================================================
+2025-12-02 20:32:24,192 - __main__ - INFO - FEATURE EXTRACTION
+2025-12-02 20:32:24,192 - __main__ - INFO - ================================================================================
+2025-12-02 20:32:24,192 - __main__ - INFO - URL: https://example-random.com
+2025-12-02 20:32:24,192 - __main__ - INFO - Manual features provided: 22
+2025-12-02 20:32:24,192 - __main__ - INFO - Expected feature count: 46
+2025-12-02 20:32:24,194 - __main__ - INFO - Feature extraction complete (URL mode)
+2025-12-02 20:32:24,194 - __main__ - INFO - Feature vector shape: (1, 46)
+2025-12-02 20:32:24,194 - __main__ - INFO - Sample of extracted features (first 15):
+2025-12-02 20:32:24,194 - __main__ - INFO -   DomainLength: 18
+2025-12-02 20:32:24,194 - __main__ - INFO -   IsDomainIP: 0
+2025-12-02 20:32:24,194 - __main__ - INFO -   URLSimilarityIndex: 0.5
+2025-12-02 20:32:24,194 - __main__ - INFO -   CharContinuationRate: 0.07692307692307693
+2025-12-02 20:32:24,195 - __main__ - INFO -   TLDLegitimateProb: 0.8
+2025-12-02 20:32:24,195 - __main__ - INFO -   URLCharProb: 0.5
+2025-12-02 20:32:24,195 - __main__ - INFO -   TLDLength: 3
+2025-12-02 20:32:24,195 - __main__ - INFO -   NoOfSubDomain: 0
+2025-12-02 20:32:24,195 - __main__ - INFO -   HasObfuscation: 0
+2025-12-02 20:32:24,195 - __main__ - INFO -   NoOfObfuscatedChar: 0
+2025-12-02 20:32:24,195 - __main__ - INFO -   ObfuscationRatio: 0.0
+2025-12-02 20:32:24,195 - __main__ - INFO -   NoOfLettersInURL: 21
+2025-12-02 20:32:24,196 - __main__ - INFO -   LetterRatioInURL: 0.8076923076923077
+2025-12-02 20:32:24,196 - __main__ - INFO -   DegitRatioInURL: 0.0
+2025-12-02 20:32:24,196 - __main__ - INFO -   NoOfQMarkInURL: 0
+2025-12-02 20:32:24,196 - __main__ - INFO - ================================================================================
+2025-12-02 20:32:24,196 - __main__ - INFO - 
+Passing features to model...
+2025-12-02 20:32:24,196 - __main__ - INFO - Feature matrix shape: (1, 46)
+2025-12-02 20:32:24,200 - __main__ - INFO - Feature data types: {dtype('int64'): 37, dtype('float64'): 9}
+2025-12-02 20:32:24,200 - __main__ - INFO - Making prediction...
+2025-12-02 20:32:24,249 - __main__ - INFO - Calculating probability scores...
+2025-12-02 20:32:24,288 - __main__ - INFO - 
+================================================================================
+2025-12-02 20:32:24,288 - __main__ - INFO - PREDICTION RESULT SUMMARY
+2025-12-02 20:32:24,288 - __main__ - INFO - ================================================================================
+2025-12-02 20:32:24,291 - __main__ - INFO - Confidence: 82.48%
+2025-12-02 20:32:24,291 - __main__ - INFO - Phishing Risk: 82.48%
+2025-12-02 20:32:24,291 - __main__ - INFO - ================================================================================
+
+2025-12-02 20:32:52,582 - __main__ - INFO -   Selected row index: 28384
+2025-12-02 20:32:52,583 - __main__ - INFO -   URL: https://www.cardstacker.com
+2025-12-02 20:32:52,583 - __main__ - INFO -   Extracted 46 features from CSV
+2025-12-02 20:32:52,583 - __main__ - INFO -   Actual label in CSV: 1 (Legitimate)
+2025-12-02 20:33:14,075 - __main__ - INFO - 
+================================================================================
+2025-12-02 20:33:14,075 - __main__ - INFO - PREDICTION ANALYSIS
+2025-12-02 20:33:14,075 - __main__ - INFO - ================================================================================
+2025-12-02 20:33:14,075 - __main__ - INFO - Timestamp: 2025-12-02 20:33:14
+2025-12-02 20:33:14,075 - __main__ - INFO - URL: https://www.cardstacker.com
+2025-12-02 20:33:14,076 - __main__ - INFO - ================================================================================
+2025-12-02 20:33:14,076 - __main__ - INFO - FEATURE EXTRACTION
+2025-12-02 20:33:14,076 - __main__ - INFO - ================================================================================
+2025-12-02 20:33:14,076 - __main__ - INFO - URL: https://www.cardstacker.com
+2025-12-02 20:33:14,076 - __main__ - INFO - Manual features provided: 46
+2025-12-02 20:33:14,077 - __main__ - INFO - Expected feature count: 46
+2025-12-02 20:33:14,077 - __main__ - INFO - Using CSV-provided features directly (40+ features available)
+2025-12-02 20:33:14,078 - __main__ - INFO - Feature extraction complete (CSV mode)
+2025-12-02 20:33:14,078 - __main__ - INFO - Feature vector shape: (1, 46)
+2025-12-02 20:33:14,078 - __main__ - INFO - First 10 features:
+2025-12-02 20:33:14,078 - __main__ - INFO -   DomainLength: 19
+2025-12-02 20:33:14,079 - __main__ - INFO -   IsDomainIP: 0
+2025-12-02 20:33:14,079 - __main__ - INFO -   URLSimilarityIndex: 100.0
+2025-12-02 20:33:14,079 - __main__ - INFO -   CharContinuationRate: 1.0
+2025-12-02 20:33:14,079 - __main__ - INFO -   TLDLegitimateProb: 0.5229071
+2025-12-02 20:33:14,079 - __main__ - INFO -   URLCharProb: 0.065726584
+2025-12-02 20:33:14,080 - __main__ - INFO -   TLDLength: 3
+2025-12-02 20:33:14,080 - __main__ - INFO -   NoOfSubDomain: 1
+2025-12-02 20:33:14,080 - __main__ - INFO -   HasObfuscation: 0
+2025-12-02 20:33:14,080 - __main__ - INFO -   NoOfObfuscatedChar: 0
+2025-12-02 20:33:14,080 - __main__ - INFO - ================================================================================
+2025-12-02 20:33:14,081 - __main__ - INFO - 
+Passing features to model...
+2025-12-02 20:33:14,081 - __main__ - INFO - Feature matrix shape: (1, 46)
+2025-12-02 20:33:14,082 - __main__ - INFO - Feature data types: {dtype('int64'): 37, dtype('float64'): 9}
+2025-12-02 20:33:14,082 - __main__ - INFO - Making prediction...
+2025-12-02 20:33:14,116 - __main__ - INFO - Calculating probability scores...
+2025-12-02 20:33:14,150 - __main__ - INFO - 
+================================================================================
+2025-12-02 20:33:14,150 - __main__ - INFO - PREDICTION RESULT SUMMARY
+2025-12-02 20:33:14,151 - __main__ - INFO - ================================================================================
+2025-12-02 20:33:14,152 - __main__ - INFO - Confidence: 100.00%
+2025-12-02 20:33:14,152 - __main__ - INFO - Phishing Risk: 0.00%
+2025-12-02 20:33:14,153 - __main__ - INFO - ================================================================================
+
+2025-12-02 20:33:33,295 - __main__ - INFO -   Selected row index: 24230
+2025-12-02 20:33:33,296 - __main__ - INFO -   URL: http://www.boardinghouses.net
+2025-12-02 20:33:33,296 - __main__ - INFO -   Extracted 46 features from CSV
+2025-12-02 20:33:33,296 - __main__ - INFO -   Actual label in CSV: 0 (Phishing)
+2025-12-02 20:33:35,408 - __main__ - INFO - 
+================================================================================
+2025-12-02 20:33:35,408 - __main__ - INFO - PREDICTION ANALYSIS
+2025-12-02 20:33:35,409 - __main__ - INFO - ================================================================================
+2025-12-02 20:33:35,409 - __main__ - INFO - Timestamp: 2025-12-02 20:33:35
+2025-12-02 20:33:35,409 - __main__ - INFO - URL: http://www.boardinghouses.net
+2025-12-02 20:33:35,409 - __main__ - INFO - ================================================================================
+2025-12-02 20:33:35,409 - __main__ - INFO - FEATURE EXTRACTION
+2025-12-02 20:33:35,410 - __main__ - INFO - ================================================================================
+2025-12-02 20:33:35,410 - __main__ - INFO - URL: http://www.boardinghouses.net
+2025-12-02 20:33:35,410 - __main__ - INFO - Manual features provided: 46
+2025-12-02 20:33:35,410 - __main__ - INFO - Expected feature count: 46
+2025-12-02 20:33:35,410 - __main__ - INFO - Using CSV-provided features directly (40+ features available)
+2025-12-02 20:33:35,411 - __main__ - INFO - Feature extraction complete (CSV mode)
+2025-12-02 20:33:35,411 - __main__ - INFO - Feature vector shape: (1, 46)
+2025-12-02 20:33:35,412 - __main__ - INFO - First 10 features:
+2025-12-02 20:33:35,412 - __main__ - INFO -   DomainLength: 22
+2025-12-02 20:33:35,412 - __main__ - INFO -   IsDomainIP: 0
+2025-12-02 20:33:35,412 - __main__ - INFO -   URLSimilarityIndex: 66.34178038
+2025-12-02 20:33:35,413 - __main__ - INFO -   CharContinuationRate: 1.0
+2025-12-02 20:33:35,413 - __main__ - INFO -   TLDLegitimateProb: 0.0384199
+2025-12-02 20:33:35,413 - __main__ - INFO -   URLCharProb: 0.059626974
+2025-12-02 20:33:35,413 - __main__ - INFO -   TLDLength: 3
+2025-12-02 20:33:35,414 - __main__ - INFO -   NoOfSubDomain: 1
+2025-12-02 20:33:35,414 - __main__ - INFO -   HasObfuscation: 0
+2025-12-02 20:33:35,414 - __main__ - INFO -   NoOfObfuscatedChar: 0
+2025-12-02 20:33:35,415 - __main__ - INFO - ================================================================================
+2025-12-02 20:33:35,415 - __main__ - INFO - 
+Passing features to model...
+2025-12-02 20:33:35,415 - __main__ - INFO - Feature matrix shape: (1, 46)
+2025-12-02 20:33:35,416 - __main__ - INFO - Feature data types: {dtype('int64'): 37, dtype('float64'): 9}
+2025-12-02 20:33:35,416 - __main__ - INFO - Making prediction...
+2025-12-02 20:33:35,462 - __main__ - INFO - Calculating probability scores...
+2025-12-02 20:33:35,500 - __main__ - INFO - 
+================================================================================
+2025-12-02 20:33:35,500 - __main__ - INFO - PREDICTION RESULT SUMMARY
+2025-12-02 20:33:35,500 - __main__ - INFO - ================================================================================
+2025-12-02 20:33:35,502 - __main__ - INFO - Confidence: 100.00%
+2025-12-02 20:33:35,503 - __main__ - INFO - Phishing Risk: 100.00%
+2025-12-02 20:33:35,503 - __main__ - INFO - ================================================================================
+
+2025-12-02 20:33:38,353 - __main__ - INFO -   Selected row index: 129776
+2025-12-02 20:33:38,353 - __main__ - INFO -   URL: https://www.abondance.com
+2025-12-02 20:33:38,353 - __main__ - INFO -   Extracted 46 features from CSV
+2025-12-02 20:33:38,353 - __main__ - INFO -   Actual label in CSV: 1 (Legitimate)
+2025-12-02 20:33:39,652 - __main__ - INFO - 
+================================================================================
+2025-12-02 20:33:39,652 - __main__ - INFO - PREDICTION ANALYSIS
+2025-12-02 20:33:39,652 - __main__ - INFO - ================================================================================
+2025-12-02 20:33:39,652 - __main__ - INFO - Timestamp: 2025-12-02 20:33:39
+2025-12-02 20:33:39,652 - __main__ - INFO - URL: https://www.abondance.com
+2025-12-02 20:33:39,653 - __main__ - INFO - ================================================================================
+2025-12-02 20:33:39,653 - __main__ - INFO - FEATURE EXTRACTION
+2025-12-02 20:33:39,653 - __main__ - INFO - ================================================================================
+2025-12-02 20:33:39,653 - __main__ - INFO - URL: https://www.abondance.com
+2025-12-02 20:33:39,653 - __main__ - INFO - Manual features provided: 46
+2025-12-02 20:33:39,654 - __main__ - INFO - Expected feature count: 46
+2025-12-02 20:33:39,654 - __main__ - INFO - Using CSV-provided features directly (40+ features available)
+2025-12-02 20:33:39,655 - __main__ - INFO - Feature extraction complete (CSV mode)
+2025-12-02 20:33:39,655 - __main__ - INFO - Feature vector shape: (1, 46)
+2025-12-02 20:33:39,655 - __main__ - INFO - First 10 features:
+2025-12-02 20:33:39,655 - __main__ - INFO -   DomainLength: 17
+2025-12-02 20:33:39,655 - __main__ - INFO -   IsDomainIP: 0
+2025-12-02 20:33:39,656 - __main__ - INFO -   URLSimilarityIndex: 100.0
+2025-12-02 20:33:39,656 - __main__ - INFO -   CharContinuationRate: 1.0
+2025-12-02 20:33:39,656 - __main__ - INFO -   TLDLegitimateProb: 0.5229071
+2025-12-02 20:33:39,656 - __main__ - INFO -   URLCharProb: 0.070099699
+2025-12-02 20:33:39,657 - __main__ - INFO -   TLDLength: 3
+2025-12-02 20:33:39,657 - __main__ - INFO -   NoOfSubDomain: 1
+2025-12-02 20:33:39,657 - __main__ - INFO -   HasObfuscation: 0
+2025-12-02 20:33:39,657 - __main__ - INFO -   NoOfObfuscatedChar: 0
+2025-12-02 20:33:39,657 - __main__ - INFO - ================================================================================
+2025-12-02 20:33:39,658 - __main__ - INFO - 
+Passing features to model...
+2025-12-02 20:33:39,658 - __main__ - INFO - Feature matrix shape: (1, 46)
+2025-12-02 20:33:39,658 - __main__ - INFO - Feature data types: {dtype('int64'): 37, dtype('float64'): 9}
+2025-12-02 20:33:39,659 - __main__ - INFO - Making prediction...
+2025-12-02 20:33:39,694 - __main__ - INFO - Calculating probability scores...
+2025-12-02 20:33:39,732 - __main__ - INFO - 
+================================================================================
+2025-12-02 20:33:39,732 - __main__ - INFO - PREDICTION RESULT SUMMARY
+2025-12-02 20:33:39,732 - __main__ - INFO - ================================================================================
+2025-12-02 20:33:39,734 - __main__ - INFO - Confidence: 100.00%
+2025-12-02 20:33:39,734 - __main__ - INFO - Phishing Risk: 0.00%
+2025-12-02 20:33:39,734 - __main__ - INFO - ================================================================================
+
+2025-12-02 20:34:17,183 - __main__ - INFO -   Selected row index: 234177
+2025-12-02 20:34:17,183 - __main__ - INFO -   URL: https://www.afbrisbane.com
+2025-12-02 20:34:17,184 - __main__ - INFO -   Extracted 46 features from CSV
+2025-12-02 20:34:17,184 - __main__ - INFO -   Actual label in CSV: 1 (Legitimate)
+2025-12-02 20:34:18,640 - __main__ - INFO - 
+================================================================================
+2025-12-02 20:34:18,641 - __main__ - INFO - PREDICTION ANALYSIS
+2025-12-02 20:34:18,641 - __main__ - INFO - ================================================================================
+2025-12-02 20:34:18,641 - __main__ - INFO - Timestamp: 2025-12-02 20:34:18
+2025-12-02 20:34:18,641 - __main__ - INFO - URL: https://www.afbrisbane.com
+2025-12-02 20:34:18,641 - __main__ - INFO - ================================================================================
+2025-12-02 20:34:18,642 - __main__ - INFO - FEATURE EXTRACTION
+2025-12-02 20:34:18,642 - __main__ - INFO - ================================================================================
+2025-12-02 20:34:18,642 - __main__ - INFO - URL: https://www.afbrisbane.com
+2025-12-02 20:34:18,642 - __main__ - INFO - Manual features provided: 46
+2025-12-02 20:34:18,642 - __main__ - INFO - Expected feature count: 46
+2025-12-02 20:34:18,642 - __main__ - INFO - Using CSV-provided features directly (40+ features available)
+2025-12-02 20:34:18,643 - __main__ - INFO - Feature extraction complete (CSV mode)
+2025-12-02 20:34:18,644 - __main__ - INFO - Feature vector shape: (1, 46)
+2025-12-02 20:34:18,644 - __main__ - INFO - First 10 features:
+2025-12-02 20:34:18,644 - __main__ - INFO -   DomainLength: 18
+2025-12-02 20:34:18,644 - __main__ - INFO -   IsDomainIP: 0
+2025-12-02 20:34:18,644 - __main__ - INFO -   URLSimilarityIndex: 100.0
+2025-12-02 20:34:18,645 - __main__ - INFO -   CharContinuationRate: 1.0
+2025-12-02 20:34:18,645 - __main__ - INFO -   TLDLegitimateProb: 0.5229071
+2025-12-02 20:34:18,645 - __main__ - INFO -   URLCharProb: 0.060559715
+2025-12-02 20:34:18,645 - __main__ - INFO -   TLDLength: 3
+2025-12-02 20:34:18,645 - __main__ - INFO -   NoOfSubDomain: 1
+2025-12-02 20:34:18,646 - __main__ - INFO -   HasObfuscation: 0
+2025-12-02 20:34:18,646 - __main__ - INFO -   NoOfObfuscatedChar: 0
+2025-12-02 20:34:18,646 - __main__ - INFO - ================================================================================
+2025-12-02 20:34:18,646 - __main__ - INFO - 
+Passing features to model...
+2025-12-02 20:34:18,646 - __main__ - INFO - Feature matrix shape: (1, 46)
+2025-12-02 20:34:18,647 - __main__ - INFO - Feature data types: {dtype('int64'): 37, dtype('float64'): 9}
+2025-12-02 20:34:18,647 - __main__ - INFO - Making prediction...
+2025-12-02 20:34:18,682 - __main__ - INFO - Calculating probability scores...
+2025-12-02 20:34:18,716 - __main__ - INFO - 
+================================================================================
+2025-12-02 20:34:18,717 - __main__ - INFO - PREDICTION RESULT SUMMARY
+2025-12-02 20:34:18,717 - __main__ - INFO - ================================================================================
+2025-12-02 20:34:18,719 - __main__ - INFO - Confidence: 100.00%
+2025-12-02 20:34:18,719 - __main__ - INFO - Phishing Risk: 0.00%
+2025-12-02 20:34:18,719 - __main__ - INFO - ================================================================================
+
